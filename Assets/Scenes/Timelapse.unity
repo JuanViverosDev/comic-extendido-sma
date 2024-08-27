@@ -825,6 +825,7 @@ GameObject:
   - component: {fileID: 485715679}
   - component: {fileID: 485715678}
   - component: {fileID: 485715677}
+  - component: {fileID: 485715680}
   m_Layer: 5
   m_Name: 3
   m_TagString: Untagged
@@ -934,6 +935,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485715675}
   m_CullTransparentMesh: 1
+--- !u!114 &485715680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485715675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd6edf3f0b49e245b17508bfa5e870a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yourButton: {fileID: 485715677}
+  sceneToLoad: Comic-3
 --- !u!1 &828183946
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,53 +1530,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1397789816
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1397789818}
-  - component: {fileID: 1397789817}
-  m_Layer: 0
-  m_Name: LoadScene
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1397789817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397789816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ac3d521646f26449a21c08a011ce824, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onProgress:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!4 &1397789818
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397789816}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08245401, y: 5.0378547, z: 134.2243}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1646219705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,6 +1820,7 @@ GameObject:
   - component: {fileID: 1841387593}
   - component: {fileID: 1841387592}
   - component: {fileID: 1841387591}
+  - component: {fileID: 1841387594}
   m_Layer: 5
   m_Name: 2
   m_TagString: Untagged
@@ -1961,6 +1930,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841387589}
   m_CullTransparentMesh: 1
+--- !u!114 &1841387594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841387589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd6edf3f0b49e245b17508bfa5e870a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yourButton: {fileID: 1841387591}
+  sceneToLoad: Comic-2
 --- !u!1 &1857318472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,4 +2030,3 @@ SceneRoots:
   - {fileID: 1752651949}
   - {fileID: 1395677211}
   - {fileID: 196836440}
-  - {fileID: 1397789818}

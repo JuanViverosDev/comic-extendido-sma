@@ -15,8 +15,11 @@ public class SceneLoaderTests
     public void Setup()
     {
         // Crear un GameObject y agregarle el script SceneLoader
-        _gameObject = new GameObject();
+        _gameObject = new GameObject("TestSceneLoader");
         _sceneLoader = _gameObject.AddComponent<SceneLoader>();
+
+        // Asignar la instancia de prueba al Singleton usando el nuevo m√©todo
+        SceneLoader.SetInstanceForTesting(_sceneLoader);
 
         // Inicializar variables de prueba
         _progressCalled = false;
@@ -30,10 +33,14 @@ public class SceneLoaderTests
     [TearDown]
     public void Teardown()
     {
+        // Destruir el GameObject creado para la prueba
         Object.Destroy(_gameObject);
+
+        // Resetear el Singleton
+        SceneLoader.SetInstanceForTesting(null);
     }
 
-    // MÈtodo invocado cuando el progreso cambia
+    // M√©todo invocado cuando el progreso cambia
     private void OnProgress(float progress)
     {
         _progressCalled = true;
@@ -43,7 +50,7 @@ public class SceneLoaderTests
     [UnityTest]
     public IEnumerator LoadSceneAsync_ShouldInvokeOnProgress()
     {
-        // Actuar: Llamar al mÈtodo LoadSceneAsync
+        // Actuar: Llamar al m√©todo LoadSceneAsync
         _sceneLoader.LoadSceneAsync("TestScene");
 
         // Verificar que el progreso se reporte antes de que se complete la carga
@@ -54,28 +61,31 @@ public class SceneLoaderTests
 
         // Assert: Verificar que el progreso ha sido reportado
         Assert.IsTrue(_progressCalled, "El evento onProgress no fue invocado.");
-        Assert.IsTrue(_progressReported >= 0.9f, "El progreso no alcanzÛ el 90%.");
+        Assert.IsTrue(_progressReported >= 0.9f, "El progreso no alcanz√≥ el 90%.");
     }
 
     [UnityTest]
     public IEnumerator LoadSceneAsync_ShouldCompleteAndActivateScene()
     {
-        // Actuar: Llamar al mÈtodo LoadSceneAsync
+        // Actuar: Llamar al m√©todo LoadSceneAsync
         _sceneLoader.LoadSceneAsync("TestScene");
 
         // Esperar a que la escena alcance el 90% de progreso
         yield return new WaitUntil(() => _progressReported >= 0.9f);
 
         // Asegurarse de que la escena sea activada manualmente (si es necesario)
-        yield return new WaitForSeconds(0.1f); // Simulamos un pequeÒo retraso
+        yield return new WaitForSeconds(0.1f); // Simulamos un peque√±o retraso
 
-        // Activar la escena manualmente si no se ha activado autom·ticamente
+        // Activar la escena manualmente si no se ha activado autom√°ticamente
         if (!SceneManager.GetActiveScene().isLoaded)
         {
             SceneManager.SetActiveScene(SceneManager.GetSceneByName("TestScene"));
         }
 
         // Assert: Verificar que la escena se ha activado correctamente
-        Assert.AreEqual("TestScene", SceneManager.GetActiveScene().name, "La escena no se activÛ correctamente.");
+        Assert.AreEqual("TestScene", SceneManager.GetActiveScene().name, "La escena no se activ√≥ correctamente.");
     }
 }
+
+
+
