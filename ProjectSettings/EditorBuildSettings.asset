@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TestScene.unity
     guid: 04327160449bcf34d9d965f1f71b011d
   - enabled: 1
-    path: Assets/Scenes/Comic-1.unity
+    path: Assets/Scenes/Comic-4.unity
     guid: 280c67671fed0484e884a63ebd249ff4
   - enabled: 1
     path: Assets/Scenes/Timelapse.unity
@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Comic-3.unity
     guid: e38ae1077e9a91c49a704e22e227a949
   - enabled: 1
-    path: Assets/Scenes/Comic-4.unity
+    path: Assets/Scenes/Comic-1.unity
     guid: 304079a5020813c4ab00664895ac9f38
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 40cd9cdfb4ad55245b1be0352b20b6e4, type: 2}

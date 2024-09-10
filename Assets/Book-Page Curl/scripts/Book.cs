@@ -357,7 +357,7 @@ public class Book : MonoBehaviour {
             float distanceToRight = Vector2.Distance(c, ebr);
             if (distanceToRight < distanceToLeft && mode == FlipMode.RightToLeft)
                 TweenBack();
-            else if (distanceToRight > distanceToLeft && mode == FlipMode.LeftToRight)
+            else if (distanceToRight/2 > distanceToLeft && mode == FlipMode.LeftToRight)
                 TweenBack();
             else
                 TweenForward();
