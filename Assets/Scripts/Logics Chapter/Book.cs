@@ -366,7 +366,7 @@ public class Book : MonoBehaviour {
                 TweenBack();
             else
                 TweenForward();
-            
+
         }
     }
     Coroutine currentCoroutine;
@@ -389,7 +389,6 @@ public class Book : MonoBehaviour {
         else
                 currentPage -= 1;
  
-            
 
         LeftNext.transform.SetParent(BookPanel.transform, true);
         Left.transform.SetParent(BookPanel.transform, true);
@@ -405,6 +404,7 @@ public class Book : MonoBehaviour {
             OnFlip.Invoke();
 
         bookTimeLine.BeginDialogs(currentPage);
+
     }
     public void TweenBack()
     {
@@ -439,6 +439,7 @@ public class Book : MonoBehaviour {
                 }
                 ));
         }
+        bookTimeLine.BeginDialogs(currentPage);
     }
     public IEnumerator TweenTo(Vector3 to, float duration, System.Action onFinish)
     {

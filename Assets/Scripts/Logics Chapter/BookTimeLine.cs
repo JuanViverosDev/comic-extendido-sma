@@ -34,6 +34,7 @@ public class BookTimeLine : MonoBehaviour
     private string currentId = "";
     private bool isShowing = false;
     private bool skip = false;
+    private Coroutine coroutine = null;
 
 
     private void Start()
@@ -94,6 +95,11 @@ public class BookTimeLine : MonoBehaviour
 
     public void Hide()
     {
+        if (coroutine != null)
+        {
+            StopCoroutine(coroutine);
+            isShowing = false;
+        }
         uiDialog.Narrativepanel.SetActive(false);
         uiDialog.Normalpanel.SetActive(false);
         interactivePage.uIInteractive.interactivepanel.SetActive(false);
@@ -118,20 +124,21 @@ public class BookTimeLine : MonoBehaviour
             }
 
         }
-        StartCoroutine(WriteText(d, uiDialog.panelTextContent));
+        coroutine = StartCoroutine(WriteText(d, uiDialog.panelTextContent));
     }
 
     private void MainDialog(Dialog d)
     {
         uiDialog.otherImage.gameObject.SetActive(false);
-        StartCoroutine(WriteText(d, uiDialog.panelTextNarrative, ()=> {
-            if(d.otherImage != null)
+        coroutine = StartCoroutine(WriteText(d, uiDialog.panelTextNarrative, () =>
+        {
+            if (d.otherImage != null)
             {
                 uiDialog.otherImage.gameObject.SetActive(true);
                 uiDialog.otherImage.sprite = d.otherImage;
                 uiDialog.otherImage.preserveAspect = true;
             }
-            
+
         }));
     }
 

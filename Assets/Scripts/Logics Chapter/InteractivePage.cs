@@ -9,10 +9,14 @@ using TMPro;
 public struct UIInteractive
 {
     public GameObject interactivepanel;
+    public GameObject infoPanel;
     public TextMeshProUGUI questiontext;
+    public TextMeshProUGUI titletext;
+    public TextMeshProUGUI contenttext;
     public GameObject contentOptions;
     public GameObject optionPrefab;
     public Button confirmBttn;
+    public Button infoBttn;
 
 }
 
@@ -28,6 +32,7 @@ public class InteractivePage : MonoBehaviour
 
     public void StartInteractivty(Decision d)
     {
+        uIInteractive.infoBttn.onClick.AddListener(() => uIInteractive.infoPanel.SetActive(false));
         uIInteractive.interactivepanel.SetActive(true);
         uIInteractive.questiontext.text = d.text;
         DeleteAllChildren(uIInteractive.contentOptions.transform);
@@ -39,12 +44,19 @@ public class InteractivePage : MonoBehaviour
             {
                 text.text = op.optionLabel;
             }
+            newChild.transform.GetChild(1).transform.GetComponent<Button>().onClick.AddListener(() => SetButton(op));
             newChild.transform.SetParent(uIInteractive.contentOptions.transform);
             newChild.transform.localScale = Vector3.one;
         }
         uIInteractive.confirmBttn.onClick.AddListener(CheckOption);
     }
 
+    public void SetButton(DecisionOption d)
+    {
+        uIInteractive.infoPanel.SetActive(true);
+        uIInteractive.titletext.text = d.optionLabel;
+        uIInteractive.contenttext.text = d.contentLabel;
+    }
 
     public void DeleteAllChildren(Transform parent)
     {
