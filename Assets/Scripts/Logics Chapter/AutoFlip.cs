@@ -26,7 +26,22 @@ public class AutoFlip : MonoBehaviour {
     {
         StartCoroutine(FlipToEnd());
     }
+
     public void FlipRightPage()
+    {
+        if (isFlipping) return;
+        if (ControledBook.currentPage >= ControledBook.TotalPageCount) return;
+        isFlipping = true;
+        float frameTime = PageFlipTime / AnimationFramesCount;
+        float xc = (ControledBook.EndBottomRight.x + ControledBook.EndBottomLeft.x) / 2;
+        float xl = ((ControledBook.EndBottomRight.x - ControledBook.EndBottomLeft.x) / 2) * 0.9f;
+        //float h =  ControledBook.Height * 0.5f;
+        float h = Mathf.Abs(ControledBook.EndBottomRight.y) * 0.9f;
+        float dx = (xl) * 2 / AnimationFramesCount;
+        StartCoroutine(FlipRTL(xc, xl, h, frameTime, dx));
+    }
+
+    public void FlipLeftPage()
     {
         if (isFlipping) return;
         if (ControledBook.currentPage >= ControledBook.TotalPageCount) return;
@@ -39,25 +54,64 @@ public class AutoFlip : MonoBehaviour {
         float dx = (xl)*2 / AnimationFramesCount;
         StartCoroutine(FlipRTL(xc, xl, h, frameTime, dx));
     }
-    public void FlipLeftPage()
+    public void FlipToPage(int page)
     {
         if (isFlipping) return;
         if (ControledBook.currentPage <= 0) return;
         isFlipping = true;
+        StartCoroutine(FlipPage(page));
+    }
+
+
+    IEnumerator FlipPage(int page)
+    {
+        yield return new WaitForSeconds(DelayBeforeStarting);
         float frameTime = PageFlipTime / AnimationFramesCount;
-        float xc = (ControledBook.EndBottomRight.x + ControledBook.EndBottomLeft.x) / 2;
-        float xl = ((ControledBook.EndBottomRight.x - ControledBook.EndBottomLeft.x) / 2) * 0.9f;
+        float xc = (ControledBook.EndBottomRight.x + ControledBook.EndBottomLeft.x)/4;
+        float xl = ((ControledBook.EndBottomRight.x - ControledBook.EndBottomLeft.x)/4) * 0.9f;
         //float h =  ControledBook.Height * 0.5f;
         float h = Mathf.Abs(ControledBook.EndBottomRight.y) * 0.9f;
+        //y=-(h/(xl)^2)*(x-xc)^2          
+        //               y         
+        //               |          
+        //               |          
+        //               |          
+        //_______________|_________________x         
+        //              o|o             |
+        //           o   |   o          |
+        //         o     |     o        | h
+        //        o      |      o       |
+        //       o------xc-------o      -
+        //               |<--xl-->
+        //               |
+        //               |
         float dx = (xl) * 2 / AnimationFramesCount;
-        StartCoroutine(FlipLTR(xc, xl, h, frameTime, dx));
+        switch (Mode)
+        {
+            case FlipMode.RightToLeft:
+                while (ControledBook.currentPage < page)
+                {
+                    StartCoroutine(FlipRTL(xc, xl, h, frameTime, dx));
+                    yield return new WaitForSeconds(TimeBetweenPages);
+                }
+                break;
+            case FlipMode.LeftToRight:
+                while (ControledBook.currentPage > page)
+                {
+                    StartCoroutine(FlipLTR(xc, xl, h, frameTime, dx));
+                    yield return new WaitForSeconds(TimeBetweenPages);
+                }
+                break;
+        }
     }
+
+
     IEnumerator FlipToEnd()
     {
         yield return new WaitForSeconds(DelayBeforeStarting);
         float frameTime = PageFlipTime / AnimationFramesCount;
-        float xc = (ControledBook.EndBottomRight.x + ControledBook.EndBottomLeft.x) / 2;
-        float xl = ((ControledBook.EndBottomRight.x - ControledBook.EndBottomLeft.x) / 2)*0.9f;
+        float xc = (ControledBook.EndBottomRight.x + ControledBook.EndBottomLeft.x)/4;
+        float xl = ((ControledBook.EndBottomRight.x - ControledBook.EndBottomLeft.x)/4)*0.9f;
         //float h =  ControledBook.Height * 0.5f;
         float h = Mathf.Abs(ControledBook.EndBottomRight.y)*0.9f;
         //y=-(h/(xl)^2)*(x-xc)^2          

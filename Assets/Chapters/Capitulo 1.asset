@@ -23,14 +23,12 @@ MonoBehaviour:
         en nuestro \xFAltimo semestre en la UAO..."
       screenCharacters: 030000000100000006000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 1
       nextId: 2
       DialogCharacter: 1
       text: "S\xED, todo comenz\xF3 con una simple idea y una gran dosis de sue\xF1os."
       screenCharacters: 030000000100000006000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 2
       nextId: 
       DialogCharacter: 6
@@ -38,7 +36,6 @@ MonoBehaviour:
         casual y termin\xF3 siendo nuestra vida."
       screenCharacters: 030000000100000006000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     decisions: []
   - background: {fileID: 21300000, guid: a2889e16a76218b4c97fea9ee162b9df, type: 3}
     isInteractive: 0
@@ -50,14 +47,12 @@ MonoBehaviour:
         nuestra idea de negocio.
       screenCharacters: 040000000500000002000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 1
       nextId: 2
       DialogCharacter: 5
       text: "\xA1Genial! Podemos aprovechar este recurso y seguir sus etapas."
       screenCharacters: 040000000500000002000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 2
       nextId: 3
       DialogCharacter: -1
@@ -65,7 +60,6 @@ MonoBehaviour:
         cuatro etapas para desarrollar y lanzar sus negocios."
       screenCharacters: 
       otherImage: {fileID: 21300000, guid: 18f782a2c30bfb448b9ceaa0b10f1ac0, type: 3}
-      sendToInteractivePage: 0
     - id: 3
       nextId: 4
       DialogCharacter: 2
@@ -74,14 +68,12 @@ MonoBehaviour:
         modelo de negocio."
       screenCharacters: 0200000005000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 4
       nextId: 
       DialogCharacter: 5
       text: "Perfecto, entonces pong\xE1monos en marcha. \xA1Vamos a Sinapsis UAO!"
       screenCharacters: 0200000005000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     decisions: []
   - background: {fileID: 21300000, guid: 4eb5216ce8e3c6e4d849fc9a79c4567a, type: 3}
     isInteractive: 0
@@ -93,7 +85,6 @@ MonoBehaviour:
         nuestra idea de negocio.
       screenCharacters: 00000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 1
       nextId: 2
       DialogCharacter: 4
@@ -101,7 +92,6 @@ MonoBehaviour:
         c\xF3mo podemos empezar con nuestro proyecto."
       screenCharacters: 04000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 2
       nextId: 3
       DialogCharacter: 0
@@ -110,14 +100,12 @@ MonoBehaviour:
         el modelo de negocio."
       screenCharacters: 00000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 3
       nextId: 4
       DialogCharacter: 4
       text: "\xBFY despu\xE9s de 'Pensar'?"
       screenCharacters: 04000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 4
       nextId: 5
       DialogCharacter: 0
@@ -125,7 +113,6 @@ MonoBehaviour:
         al mercado con un portafolio definido.
       screenCharacters: 00000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 5
       nextId: 
       DialogCharacter: -1
@@ -133,7 +120,6 @@ MonoBehaviour:
         a su  sue\xF1o."
       screenCharacters: 
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     decisions: []
   - background: {fileID: 21300000, guid: 5a0d79614b4691a4fa7cc7376071831e, type: 3}
     isInteractive: 0
@@ -145,7 +131,6 @@ MonoBehaviour:
         a una necesidad real del mercado."
       screenCharacters: 0500000002000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 1
       nextId: 2
       DialogCharacter: 2
@@ -153,7 +138,6 @@ MonoBehaviour:
         las tecnolog\xEDas de IoT y energ\xEDas renovables."
       screenCharacters: 0500000002000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 2
       nextId: 3
       DialogCharacter: 4
@@ -161,7 +145,6 @@ MonoBehaviour:
         de mercado que discutimos.
       screenCharacters: 04000000
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     - id: 3
       nextId: 
       DialogCharacter: -1
@@ -169,7 +152,6 @@ MonoBehaviour:
         de 'Pensar'  en Sinapsis UAO.
       screenCharacters: 
       otherImage: {fileID: 0}
-      sendToInteractivePage: 0
     decisions: []
   - background: {fileID: 21300000, guid: 7dfe5c72e5f135942bd106ec4d55151b, type: 3}
     isInteractive: 1
@@ -181,23 +163,131 @@ MonoBehaviour:
         UAO\u201D"
       options:
       - optionLabel: Mercado Urbano Residencial
-        contentLabel: "Demanda: Hogares en la ciudad de Cali est\xE1n experimentando
+        contentLabel: "<b>Demanda</b>: Hogares en la ciudad de Cali est\xE1n experimentando
           un aumento en los costos de energ\xEDa, impulsando la demanda de soluciones
-          que optimicen el consumo energ\xE9tico.\L\nTendencias: Hay un creciente
+          que optimicen el consumo energ\xE9tico.\L\n<b>Tendencias</b>: Hay un creciente
           inter\xE9s en la adopci\xF3n de tecnolog\xEDas inteligentes para el hogar,
-          como termostatos, medidores inteligentes y sistemas de gesti\xF3n de energ\xEDa.\L\nCompetencia:
+          como termostatos, medidores inteligentes y sistemas de gesti\xF3n de energ\xEDa.\L\n<b>Competencia</b>:
           El mercado ya cuenta con algunos actores ofreciendo dispositivos de eficiencia
           energ\xE9tica, pero pocos integran IoT con energ\xEDas renovables de manera
           efectiva."
         pageResult: 5
       - optionLabel: "Mercado de Peque\xF1as y Medianas Empresas (PyMEs)"
-        contentLabel: "Demanda: Las PyMEs est\xE1n buscando formas de reducir sus
-          costos operativos, y la energ\xEDa es uno de los gastos m\xE1s significativos.
+        contentLabel: "<b>Demanda</b>: Las PyMEs est\xE1n buscando formas de reducir
+          sus costos operativos, y la energ\xEDa es uno de los gastos m\xE1s significativos.
           Hay un inter\xE9s creciente en soluciones que permitan un control preciso
-          del consumo energ\xE9tico.\L\nTendencias: Las pol\xEDticas gubernamentales
+          del consumo energ\xE9tico.\L\n<b>Tendencias</b>: Las pol\xEDticas gubernamentales
           est\xE1n incentivando a las empresas a reducir su huella de carbono, lo
           que ha aumentado la adopci\xF3n de energ\xEDas renovables y tecnolog\xEDas
-          IoT.\L\nCompetencia: Hay una presencia limitada de soluciones integradas
+          IoT.\L\n<b>Competencia</b>: Hay una presencia limitada de soluciones integradas
           espec\xEDficas para PyMEs que combinen IoT y energ\xEDas renovables, lo
           que abre una oportunidad en este nicho."
-        pageResult: 5
+        pageResult: 8
+  - background: {fileID: 21300000, guid: 41f72c0cba3ae574aa9a60be6593f412, type: 3}
+    isInteractive: 0
+    dialogs:
+    - id: 0
+      nextId: 1
+      DialogCharacter: 4
+      text: "El consumo de energ\xEDa en hogares sigue aumentando. Muchas familias
+        buscan formas de reducir costos y ser m\xE1s eficientes."
+      screenCharacters: 04000000
+      otherImage: {fileID: 0}
+    - id: 1
+      nextId: 2
+      DialogCharacter: 5
+      text: "Las soluciones de IoT son perfectas para este mercado. Pero necesitamos
+        algo que no solo automatice, sino que tambi\xE9n aporte verdadero ahorro."
+      screenCharacters: 05000000
+      otherImage: {fileID: 0}
+    decisions: []
+  - background: {fileID: 21300000, guid: 41f72c0cba3ae574aa9a60be6593f412, type: 3}
+    isInteractive: 1
+    dialogs: []
+    decisions:
+    - id: 0
+      nextId: 
+      text: "Has elegido centrarte en el Mercado Urbano Residencial. \xBFQu\xE9 enfoque 
+        tomar\xEDas para tu negocio"
+      options:
+      - optionLabel: "Ofrecer una soluci\xF3n de IoT enfocada en la automatizaci\xF3n
+          personalizada y  eficiencia."
+        contentLabel: Consecuencia
+        pageResult: 7
+      - optionLabel: "Centrarse en dispositivos accesibles para hogares de clase
+          media, maximizando el  ahorro energ\xE9tico."
+        contentLabel: Consecuencia
+        pageResult: 7
+  - background: {fileID: 21300000, guid: 41f72c0cba3ae574aa9a60be6593f412, type: 3}
+    isInteractive: 0
+    dialogs:
+    - id: 0
+      nextId: 1
+      DialogCharacter: 2
+      text: "Si seguimos este camino, podremos ofrecer una propuesta de valor s\xF3lida.
+        Las familias est\xE1n listas para invertir en tecnolog\xEDa que realmente
+        haga una diferencia."
+      screenCharacters: 020000000400000005000000
+      otherImage: {fileID: 0}
+    - id: 1
+      nextId: 
+      DialogCharacter: -1
+      text: "Con una estrategia clara en mente, el equipo est\xE1 preparado para
+        entrar al  mercado urbano residencial con una oferta diferenciada."
+      screenCharacters: 
+      otherImage: {fileID: 0}
+    decisions: []
+  - background: {fileID: 21300000, guid: 4eb5216ce8e3c6e4d849fc9a79c4567a, type: 3}
+    isInteractive: 0
+    dialogs:
+    - id: 0
+      nextId: 1
+      DialogCharacter: 5
+      text: "Las PyMEs son especialmente sensibles a los costos energ\xE9ticos. Si
+        podemos ofrecerles una soluci\xF3n que ahorre energ\xEDa, podr\xEDamos ayudarlas
+        a mejorar su rentabilidad."
+      screenCharacters: 05000000
+      otherImage: {fileID: 0}
+    - id: 1
+      nextId: 
+      DialogCharacter: 4
+      text: "Todav\xEDa no hay muchas soluciones IoT adaptadas espec\xEDficamente
+        para este tipo de empresas. Es una oportunidad real."
+      screenCharacters: 04000000
+      otherImage: {fileID: 0}
+    decisions: []
+  - background: {fileID: 21300000, guid: 4eb5216ce8e3c6e4d849fc9a79c4567a, type: 3}
+    isInteractive: 1
+    dialogs: []
+    decisions:
+    - id: 0
+      nextId: 
+      text: "Has elegido centrarte en el Mercado de Peque\xF1as y Medianas Empresas. 
+        \xBFQu\xE9 enfoque tomar\xEDas para tu negocio?"
+      options:
+      - optionLabel: "Desarrollar un sistema de monitoreo energ\xE9tico en tiempo
+          real, permitiendo a las  PyMEs reducir costos de manera proactiva."
+        contentLabel: Consecuencia
+        pageResult: 10
+      - optionLabel: "Crear un paquete completo de IoT y energ\xEDas renovables,
+          enfocado en PyMEs  interesadas en sostenibilidad."
+        contentLabel: Consecuencia
+        pageResult: 10
+  - background: {fileID: 21300000, guid: 4eb5216ce8e3c6e4d849fc9a79c4567a, type: 3}
+    isInteractive: 0
+    dialogs:
+    - id: 0
+      nextId: 1
+      DialogCharacter: 2
+      text: "Crear un paquete completo de IoT y energ\xEDas renovables, enfocado
+        en PyMEs  interesadas en sostenibilidad."
+      screenCharacters: 020000000400000005000000
+      otherImage: {fileID: 0}
+    - id: 1
+      nextId: 
+      DialogCharacter: -1
+      text: "El equipo siente que ha encontrado un nicho rentable, listo para abordar
+        las  necesidades energ\xE9ticas de las PyMEs y diferenciarse en el mercado."
+      screenCharacters: 
+      otherImage: {fileID: 0}
+    decisions: []

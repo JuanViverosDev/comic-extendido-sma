@@ -382,6 +382,26 @@ public class Book : MonoBehaviour {
         else
         currentCoroutine = StartCoroutine(TweenTo(ebr, 0.15f, () => { Flip(); }));
     }
+
+    public void FlipToPage(int page)
+    {
+        currentPage = page;
+        LeftNext.transform.SetParent(BookPanel.transform, true);
+        Left.transform.SetParent(BookPanel.transform, true);
+        LeftNext.transform.SetParent(BookPanel.transform, true);
+        Left.gameObject.SetActive(false);
+        Right.gameObject.SetActive(false);
+        Right.transform.SetParent(BookPanel.transform, true);
+        RightNext.transform.SetParent(BookPanel.transform, true);
+        UpdateSprites();
+        Shadow.gameObject.SetActive(false);
+        ShadowLTR.gameObject.SetActive(false);
+        if (OnFlip != null)
+            OnFlip.Invoke();
+
+        bookTimeLine.BeginDialogs(currentPage);
+    }
+
     void Flip()
     {
         if (mode == FlipMode.RightToLeft)

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -24,6 +25,7 @@ public class InteractivePage : MonoBehaviour
 {
     public UIInteractive uIInteractive;
     private Book book;
+    private Decision decision;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,7 @@ public class InteractivePage : MonoBehaviour
 
     public void StartInteractivty(Decision d)
     {
+        decision = d;
         uIInteractive.infoBttn.onClick.AddListener(() => uIInteractive.infoPanel.SetActive(false));
         uIInteractive.interactivepanel.SetActive(true);
         uIInteractive.questiontext.text = d.text;
@@ -68,7 +71,19 @@ public class InteractivePage : MonoBehaviour
 
     public void CheckOption()
     {
+        List<bool> options = new();
+        Debug.Log(uIInteractive.contentOptions.transform.childCount);
+        for (int i = 0; i < uIInteractive.contentOptions.transform.childCount; i++)
+        {
+            options.Add(uIInteractive.contentOptions.transform.GetChild(i).GetComponentInChildren<Toggle>().isOn);
+        }
 
+        if (options.Where(op => op == true).ToArray().Length == 1 && decision != null)
+        {
+            var index = options.IndexOf(true);
+            book.FlipToPage(decision.options[index].pageResult);
+            uIInteractive.interactivepanel.SetActive(false);
+        }
     }
 
 }

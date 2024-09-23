@@ -64,5 +64,5 @@ public class Dialog
 
     public List<Characters> screenCharacters;
     public Sprite otherImage;
-    public bool sendToInteractivePage;
+    //public bool sendToInteractivePage;
 }
