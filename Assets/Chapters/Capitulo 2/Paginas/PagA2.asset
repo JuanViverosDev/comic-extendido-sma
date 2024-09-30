@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: PagA2
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: 98ad67a193c824441a46f5bdc1d6e594, type: 3}
+  isInteractive: 1
+  isFinal: 0
+  resultID: 
+  dialogs: []
+  decisions:
+  - id: Cap2A_Dec1
+    nextId: 
+    text: "Cada objetivo guiar\xE1 la direcci\xF3n de tu plan de acci\xF3n."
+    options:
+    - OptionID: Cap2A_Dec1_OptA
+      optionLabel: "Aumentar la eficiencia energ\xE9tica en un 30% en hogares residenciales."
+      contentLabel: "Este objetivo se enfoca en un beneficio tangible que puede ser
+        medible y atractivo para los usuarios, pero requiere una fuerte inversi\xF3n
+        inicial en desarrollo tecnol\xF3gico."
+      retroalimentation: 
+      pages: []
+    - OptionID: Cap2A_Dec1_OptB
+      optionLabel: "Lograr 1000 usuarios en el primer a\xF1o a trav\xE9s de campa\xF1as
+        de marketing digital."
+      contentLabel: "Centrarse en el crecimiento del usuario puede expandir r\xE1pidamente
+        la base de clientes, pero puede llevar a un enfoque menos centrado en la
+        calidad del producto inicial."
+      retroalimentation: 
+      pages: []

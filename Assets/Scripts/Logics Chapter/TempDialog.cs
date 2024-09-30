@@ -15,7 +15,7 @@ public class TempDialog : MonoBehaviour
     IEnumerator showTemp()
     {
         yield return new WaitForSeconds(time);
-        gameObject.SetActive(false);
         onFinish?.Invoke();
+        gameObject.SetActive(false);
     }
 }

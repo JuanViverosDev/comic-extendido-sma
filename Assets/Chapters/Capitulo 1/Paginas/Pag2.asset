@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: Pag2
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: a2889e16a76218b4c97fea9ee162b9df, type: 3}
+  isInteractive: 0
+  isFinal: 0
+  dialogs:
+  - id: 0
+    nextId: 1
+    DialogCharacter: 4
+    text: Miren esto, Sinapsis UAO tiene un proceso claro para ayudarnos a desarrollar
+      nuestra idea de negocio.
+    screenCharacters: 040000000500000002000000
+    otherImage: {fileID: 0}
+  - id: 1
+    nextId: 2
+    DialogCharacter: 5
+    text: "\xA1Genial! Podemos aprovechar este recurso y seguir sus etapas."
+    screenCharacters: 040000000500000002000000
+    otherImage: {fileID: 0}
+  - id: 2
+    nextId: 3
+    DialogCharacter: -1
+    text: "Sinapsis UAO gu\xEDa a los emprendedores a trav\xE9s de un proceso de
+      cuatro etapas para desarrollar y lanzar sus negocios."
+    screenCharacters: 
+    otherImage: {fileID: 21300000, guid: 18f782a2c30bfb448b9ceaa0b10f1ac0, type: 3}
+  - id: 3
+    nextId: 4
+    DialogCharacter: 2
+    text: "La etapa de 'So\xF1ar' nos ayudar\xE1 a conocer mejor nuestro perfil emprendedor.
+      Luego, podr\xEDamos pasar a 'Pensar' para consolidar nuestro modelo de negocio."
+    screenCharacters: 0200000005000000
+    otherImage: {fileID: 0}
+  - id: 4
+    nextId: 
+    DialogCharacter: 5
+    text: "Perfecto, entonces pong\xE1monos en marcha. \xA1Vamos a Sinapsis UAO!"
+    screenCharacters: 0200000005000000
+    otherImage: {fileID: 0}
+  decisions: []

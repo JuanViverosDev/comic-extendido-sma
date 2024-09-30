@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,15 +11,14 @@ using TMPro;
 [Serializable]
 public struct UIDialog
 {
-    public GameObject Normalpanel;
-    public GameObject Narrativepanel;
+    public GameObject Normalpanel,Narrativepanel,finalButton;
     public TextMeshProUGUI panelTextName;
     public TextMeshProUGUI panelTextContent;
     public TextMeshProUGUI panelTextNarrative;
-    public TextMeshProUGUI indexDialog;
-    public Image otherImage;
-    public Image iconCharacter;
+    public TextMeshProUGUI indexDialog, indexDialog2;
+    public Image otherImage,iconCharacter;
     public List<Image> imageCharacters;
+
 }
 
 public class BookTimeLine : MonoBehaviour
@@ -31,16 +31,21 @@ public class BookTimeLine : MonoBehaviour
     public UIDialog uiDialog;
     public Chapter chapter;
     public CharacterList characterList;
+    public List<Page> pages;
+    public DecisionManager decisionManager;
     private string currentId = "";
     private bool isShowing = false;
+    private bool isFinal = false;
     private bool skip = false;
     private Coroutine coroutine = null;
 
 
     private void Start()
     {
+        pages = chapter.pages.ToList();
         book = transform.GetComponent<Book>();
         interactivePage = transform.GetComponent<InteractivePage>();
+        decisionManager.SetCurrentChapter(chapter);
     }
 
     public void HandTap()
@@ -58,19 +63,29 @@ public class BookTimeLine : MonoBehaviour
 
     public void BeginDialogs(int page)
     {
-        if (chapter.pages.Count > 0)
+        book.hotSpots.left.SetActive(true);
+        book.hotSpots.right.SetActive(true);
+
+        if (pages.Count > 0)
         {
-            if (chapter.pages[page].isInteractive)
+            if (pages[page].isInteractive)
             {
-                var dc = chapter.pages[page].decisions;
+                book.hotSpots.right.SetActive(false);
+                var dc = pages[page].decisions;
                 if (dc.Count > 0)
                     interactivePage.StartInteractivty(dc[0]);
             }
             else
             {
-                var ds = chapter.pages[page].dialogs;
+                var ds = pages[page].dialogs;
                 if (ds.Count > 0)
                     SendDialog(ds[0].id);
+
+                if (pages[page].isFinal)
+                {
+                    book.hotSpots.right.SetActive(false);
+                    isFinal = true;
+                }
             }
 
         }
@@ -82,11 +97,12 @@ public class BookTimeLine : MonoBehaviour
     public void SendDialog(string id)
     {
 
-        Dialog d = chapter.pages[book.currentPage].dialogs.Find(d => d.id == id);
+        Dialog d = pages[book.currentPage].dialogs.Find(d => d.id == id);
 
         if (d?.id != null && !isShowing)
         {
-            uiDialog.indexDialog.text = $"{chapter.pages[book.currentPage].dialogs.IndexOf(d) + 1}/{chapter.pages[book.currentPage].dialogs.Count}";
+            uiDialog.indexDialog.text = $"{pages[book.currentPage].dialogs.IndexOf(d) + 1}/{pages[book.currentPage].dialogs.Count}";
+            uiDialog.indexDialog2.text = $"{pages[book.currentPage].dialogs.IndexOf(d) + 1}/{pages[book.currentPage].dialogs.Count}";
             StartDialog(d);
             isShowing = true;
         }
@@ -95,6 +111,7 @@ public class BookTimeLine : MonoBehaviour
 
     public void Hide()
     {
+        uiDialog.finalButton.SetActive(false);
         if (coroutine != null)
         {
             StopCoroutine(coroutine);
@@ -177,13 +194,22 @@ public class BookTimeLine : MonoBehaviour
         panel.text = d.text;
         isShowing = false;
 
-        if (onFinish != null)
-        {
-            onFinish();
-        }
 
+        onFinish?.Invoke();
         currentId = d.nextId;
 
+        if (isFinal && string.IsNullOrEmpty(d.nextId))
+        {
+            isFinal = false;
+
+            uiDialog.finalButton.SetActive(true);
+        }
     }
    
+
+    public void handFinal()
+    {
+        decisionManager.UnlockChapter(chapter.chapterIndex + 1, pages.Last().resultID);
+        SceneLoader.Instance.LoadSceneAsync("Timelapse");
+    }
 }

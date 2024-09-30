@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: Pag5
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: 7dfe5c72e5f135942bd106ec4d55151b, type: 3}
+  isInteractive: 1
+  isFinal: 0
+  resultID: 
+  dialogs: []
+  decisions:
+  - id: Cap1_Dec1
+    nextId: 
+    text: "Escoge el Mercado a contemplar dentro de \u2018Pensar\u2019 ~ \u201CSipnasis
+      UAO\u201D"
+    options:
+    - OptionID: Cap1_Dec1_OptA
+      optionLabel: Mercado Urbano Residencial
+      contentLabel: "<b>Demanda</b>: Hogares en la ciudad de Cali est\xE1n experimentando
+        un aumento en los costos de energ\xEDa, impulsando la demanda de soluciones
+        que optimicen el consumo energ\xE9tico.\L\n<b>Tendencias</b>: Hay un creciente
+        inter\xE9s en la adopci\xF3n de tecnolog\xEDas inteligentes para el hogar,
+        como termostatos, medidores inteligentes y sistemas de gesti\xF3n de energ\xEDa.\L\n<b>Competencia</b>:
+        El mercado ya cuenta con algunos actores ofreciendo dispositivos de eficiencia
+        energ\xE9tica, pero pocos integran IoT con energ\xEDas renovables de manera
+        efectiva."
+      retroalimentation: 
+      pages:
+      - {fileID: 11400000, guid: 7c0a85a8fbffae645aa7c0dd415eed8f, type: 2}
+      - {fileID: 11400000, guid: 3798ed13b21a9c94d94bb82f7c87feee, type: 2}
+    - OptionID: Cap1_Dec1_OptB
+      optionLabel: "Mercado de Peque\xF1as y Medianas Empresas (PyMEs)"
+      contentLabel: "<b>Demanda</b>: Las PyMEs est\xE1n buscando formas de reducir
+        sus costos operativos, y la energ\xEDa es uno de los gastos m\xE1s significativos.
+        Hay un inter\xE9s creciente en soluciones que permitan un control preciso
+        del consumo energ\xE9tico.\L\n<b>Tendencias</b>: Las pol\xEDticas gubernamentales
+        est\xE1n incentivando a las empresas a reducir su huella de carbono, lo que
+        ha aumentado la adopci\xF3n de energ\xEDas renovables y tecnolog\xEDas IoT.\L\n<b>Competencia</b>:
+        Hay una presencia limitada de soluciones integradas espec\xEDficas para PyMEs
+        que combinen IoT y energ\xEDas renovables, lo que abre una oportunidad en
+        este nicho."
+      retroalimentation: 
+      pages:
+      - {fileID: 11400000, guid: 386e085e476495344b3d81d613dbeaeb, type: 2}
+      - {fileID: 11400000, guid: 0d9d577ffa2c6384ba1ccb9d07f1c98d, type: 2}
