@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: PagB1
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: f76915ef6d593864a973a11fb333cc6b, type: 3}
+  isInteractive: 0
+  isFinal: 0
+  dialogs:
+  - id: 0
+    nextId: 1
+    DialogCharacter: -1
+    text: "Los personajes est\xE1n instalando la plataforma IoT en una PyME seleccionada
+      para la prueba piloto."
+    screenCharacters: 
+    otherImage: {fileID: 0}
+  - id: 1
+    nextId: 2
+    DialogCharacter: 4
+    text: "Es clave que estas empresas vean r\xE1pidamente el valor de nuestra soluci\xF3n
+      en la reducci\xF3n de costos."
+    screenCharacters: 0400000002000000
+    otherImage: {fileID: 0}
+  - id: 2
+    nextId: 3
+    DialogCharacter: -1
+    text: "John monitorea la integraci\xF3n de la plataforma con los sistemas existentes
+      de la PyME.\r\n"
+    screenCharacters: 
+    otherImage: {fileID: 0}
+  - id: 3
+    nextId: 4
+    DialogCharacter: 2
+    text: "Parece que la integraci\xF3n est\xE1 tardando m\xE1s de lo planeado debido
+      a incompatibilidades."
+    screenCharacters: 0200000004000000
+    otherImage: {fileID: 0}
+  decisions: []

@@ -20,7 +20,7 @@ public class ButtonHandler : MonoBehaviour
     }
     else
     {
-        Debug.LogError("Button or Scene name not set on " + gameObject.name);
+        Debug.Log("Button or Scene name not set on " + gameObject.name);
     }
 }
 

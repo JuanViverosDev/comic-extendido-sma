@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: Pag3
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: 4eb5216ce8e3c6e4d849fc9a79c4567a, type: 3}
+  isInteractive: 0
+  isFinal: 0
+  dialogs:
+  - id: 0
+    nextId: 1
+    DialogCharacter: 0
+    text: "\xA1Bienvenidos a Sinapsis UAO!. Me llamo Carlos Rodriguez. Aqu\xED ayudamos
+      a convertir ideas en realidades empresariales. \xBFEn qu\xE9 puedo ayudarlos
+      hoy?"
+    screenCharacters: 00000000
+    otherImage: {fileID: 0}
+  - id: 1
+    nextId: 2
+    DialogCharacter: 4
+    text: "Queremos saber m\xE1s sobre el proceso de emprendimiento. Especialmente
+      c\xF3mo podemos empezar con nuestro proyecto."
+    screenCharacters: 04000000
+    otherImage: {fileID: 0}
+  - id: 2
+    nextId: 3
+    DialogCharacter: 0
+    text: "Nuestra primera etapa es 'So\xF1ar'. Ayudamos a conocer el perfil emprendedor
+      de cada miembro del equipo. Luego pasamos a 'Pensar', donde consolidamos el
+      modelo de negocio."
+    screenCharacters: 00000000
+    otherImage: {fileID: 0}
+  - id: 3
+    nextId: 4
+    DialogCharacter: 4
+    text: "\xBFY despu\xE9s de 'Pensar'?"
+    screenCharacters: 04000000
+    otherImage: {fileID: 0}
+  - id: 4
+    nextId: 5
+    DialogCharacter: 0
+    text: Pasamos a 'Testear', que es la etapa donde se concreta el prototipo y se
+      desarrolla el plan de negocios.
+    screenCharacters: 00000000
+    otherImage: {fileID: 0}
+  - id: 5
+    nextId: 6
+    DialogCharacter: 0
+    text: Finalmente, llegamos a 'Arrancar', donde buscamos financiamiento y lanzamos
+      al mercado con un portafolio definido.
+    screenCharacters: 00000000
+    otherImage: {fileID: 0}
+  - id: 6
+    nextId: 
+    DialogCharacter: -1
+    text: "Los personajes sienten que han encontrado el lugar ideal para dar forma
+      a su  sue\xF1o."
+    screenCharacters: 
+    otherImage: {fileID: 0}
+  decisions: []

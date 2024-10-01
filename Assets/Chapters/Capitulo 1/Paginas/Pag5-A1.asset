@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: Pag5-A1
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: 4eb5216ce8e3c6e4d849fc9a79c4567a, type: 3}
+  isInteractive: 0
+  isFinal: 0
+  dialogs:
+  - id: 0
+    nextId: 1
+    DialogCharacter: 4
+    text: "El consumo de energ\xEDa en hogares sigue aumentando. Muchas familias
+      buscan formas de reducir costos y ser m\xE1s eficientes."
+    screenCharacters: 04000000
+    otherImage: {fileID: 0}
+  - id: 1
+    nextId: 
+    DialogCharacter: 5
+    text: "Las soluciones de IoT son perfectas para este mercado. Pero necesitamos
+      algo que no solo automatice, sino que tambi\xE9n aporte verdadero ahorro."
+    screenCharacters: 05000000
+    otherImage: {fileID: 0}
+  decisions: []

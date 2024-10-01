@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08f2dd3bf56f00479e3e79113745b54, type: 3}
+  m_Name: Cap2A
+  m_EditorClassIdentifier: 
+  chapterIndex: 2
+  chapterID: Cap2A
+  pages:
+  - {fileID: 11400000, guid: 7db98f9bd89c6324b8c7a17a019bf189, type: 2}
+  - {fileID: 11400000, guid: 1ed0e2203764814439fc2758018ae851, type: 2}
+  - {fileID: 11400000, guid: 6df55f69ccb97d54192c79142956540a, type: 2}
+  - {fileID: 11400000, guid: 90fb6ecaa87242c4d869a1248cdf071b, type: 2}
+  - {fileID: 11400000, guid: 43422b35fac093a428b2d2522b6ee7f7, type: 2}
+  - {fileID: 11400000, guid: 2b49f466800695a4fafeba3c03c7252e, type: 2}
