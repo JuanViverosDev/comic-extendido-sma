@@ -19,7 +19,7 @@ public class ThumbnailListGenerator : MonoBehaviour
         GenerateThumbnails();
     }
 
-    void GenerateThumbnails()
+    public void GenerateThumbnails()
     {
         // Cargar el progreso del jugador (capítulos desbloqueados)
         GameData data = SaveSystem.LoadGame();
