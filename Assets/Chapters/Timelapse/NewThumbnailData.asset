@@ -15,4 +15,5 @@ MonoBehaviour:
   thumbnailImage: {fileID: 21300000, guid: a59d7ada21f99b04a83f5becd2b9fbef, type: 3}
   titleText: "Cap\xEDtulo 1"
   descriptionText: "El comienzo del Sue\xF1o"
+  chapterID: Cap1
   sceneToLoad: Comic-1

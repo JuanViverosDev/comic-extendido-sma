@@ -6,6 +6,9 @@ public class ThumbnailData : ScriptableObject
     public Sprite thumbnailImage;
     public string titleText;
     public string descriptionText;
+    public string chapterID;
 
     public string sceneToLoad;
+
+
 }
