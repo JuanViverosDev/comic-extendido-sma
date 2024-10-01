@@ -10,7 +10,7 @@ public class LoadChapter : MonoBehaviour
     private GameData gameData;
     private Chapter loadedChapter;
 
-    private void Start()
+    public void Start()
     {
         if (loadedChapter != null)
         {
@@ -18,7 +18,7 @@ public class LoadChapter : MonoBehaviour
         }
     }
 
-    private void Awake()
+    public void Awake()
     {
         gameData = SaveSystem.LoadGame();
         var chapterId = gameData.unlockedChapters[numberCap - 1];

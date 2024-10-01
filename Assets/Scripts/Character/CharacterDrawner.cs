@@ -1,5 +1,8 @@
 using UnityEngine;
+
+#if UNITY_EDITOR
 using UnityEditor;
+
 
 [CustomPropertyDrawer(typeof(Character))]
 public class CharacterDrawer : PropertyDrawer
@@ -62,3 +65,5 @@ public class CharacterDrawer : PropertyDrawer
         return EditorGUIUtility.singleLineHeight + spriteHeight * 2 + padding * 3;
     }
 }
+
+#endif

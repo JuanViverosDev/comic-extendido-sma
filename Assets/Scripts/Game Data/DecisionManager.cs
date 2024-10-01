@@ -6,7 +6,7 @@ public class DecisionManager : MonoBehaviour
     private Chapter currentChapter;  // Referencia al ScriptableObject que contiene el chapterID
     private GameData gameData;
 
-    void Start()
+    public void Start()
     {
         // Cargar los datos guardados al iniciar el juego
         gameData = SaveSystem.LoadGame();

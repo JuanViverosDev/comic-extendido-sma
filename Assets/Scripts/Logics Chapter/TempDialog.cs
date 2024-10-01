@@ -12,7 +12,7 @@ public class TempDialog : MonoBehaviour
         StartCoroutine(showTemp());
     }
 
-    IEnumerator showTemp()
+    public IEnumerator showTemp()
     {
         yield return new WaitForSeconds(time);
         onFinish?.Invoke();
