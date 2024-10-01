@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: PagA6
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: e904817c6862da945b570ec8492cacff, type: 3}
+  isInteractive: 1
+  isFinal: 1
+  resultID: Cap3A
+  dialogs: []
+  decisions:
+  - id: Cap2A_Dec3
+    nextId: 
+    text: "Define el cronograma para cada paso del plan de acci\xF3n."
+    options:
+    - OptionID: Cap2A_Dec3_OptA
+      optionLabel: "Establecer hitos a corto plazo: Finalizaci\xF3n del prototipo
+        en 3 meses, pruebas beta en 6 meses."
+      contentLabel: "Un enfoque a corto plazo permite ajustes r\xE1pidos y mejora
+        continua, pero puede ser estresante y requerir recursos constantes."
+      retroalimentation: 
+      pages: []
+    - OptionID: Cap2A_Dec3_OptB
+      optionLabel: "Establecer hitos a largo plazo: Lanzamiento comercial en 1 a\xF1o,
+        expansi\xF3n a nuevas ciudades en 2 a\xF1os."
+      contentLabel: "Un enfoque a largo plazo ofrece tiempo para desarrollar un producto
+        m\xE1s robusto, pero puede perder impulso inicial en el mercado."
+      retroalimentation: 
+      pages: []

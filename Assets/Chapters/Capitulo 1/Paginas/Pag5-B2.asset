@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: Pag5-B2
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: 41f72c0cba3ae574aa9a60be6593f412, type: 3}
+  isInteractive: 1
+  isFinal: 0
+  resultID: 
+  dialogs: []
+  decisions:
+  - id: Cap1_Dec2B
+    nextId: 
+    text: "Has elegido centrarte en el Mercado de Peque\xF1as y Medianas Empresas. 
+      \xBFQu\xE9 enfoque tomar\xEDas para tu negocio?"
+    options:
+    - OptionID: Cap1_Dec2B_OptB
+      optionLabel: "Desarrollar un sistema de monitoreo energ\xE9tico en tiempo real,
+        permitiendo a las  PyMEs reducir costos de manera proactiva."
+      contentLabel: "Ofrecer monitoreo en tiempo real ayuda a las PyMEs a identificar
+        patrones de consumo y ahorrar energ\xEDa r\xE1pidamente. 'EnergyTrack' implement\xF3
+        una soluci\xF3n similar y logr\xF3 reducir los costos energ\xE9ticos de sus
+        clientes en un 25%, lo que les asegur\xF3 un crecimiento sostenido."
+      retroalimentation: 
+      pages:
+      - {fileID: 11400000, guid: 887ca7733086684489c52d9db6aadbe3, type: 2}
+    - OptionID: Cap1_Dec2B_OptB
+      optionLabel: "Crear un paquete completo de IoT y energ\xEDas renovables, enfocado
+        en PyMEs  interesadas en sostenibilidad."
+      contentLabel: "Un paquete completo de IoT y energ\xEDas renovables es ideal
+        para PyMEs comprometidas con la sostenibilidad. 'GreenPowerTech' sigui\xF3
+        un enfoque similar y gan\xF3 popularidad entre empresas conscientes del medio
+        ambiente, lo que les permiti\xF3 expandirse r\xE1pidamente en mercados emergentes."
+      retroalimentation: 
+      pages:
+      - {fileID: 11400000, guid: 887ca7733086684489c52d9db6aadbe3, type: 2}

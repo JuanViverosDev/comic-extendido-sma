@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: Pag1
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: 5a0d79614b4691a4fa7cc7376071831e, type: 3}
+  isInteractive: 0
+  isFinal: 0
+  dialogs:
+  - id: 0
+    nextId: 1
+    DialogCharacter: 3
+    text: "\xBFRecuerdan c\xF3mo empez\xF3 todo? \nParece que fue ayer cuando est\xE1bamos
+      en nuestro \xFAltimo semestre en la UAO..."
+    screenCharacters: 030000000100000006000000
+    otherImage: {fileID: 0}
+  - id: 1
+    nextId: 2
+    DialogCharacter: 1
+    text: "S\xED, todo comenz\xF3 con una simple idea y una gran dosis de sue\xF1os."
+    screenCharacters: 030000000100000006000000
+    otherImage: {fileID: 0}
+  - id: 2
+    nextId: 3
+    DialogCharacter: 6
+    text: "\xA1Qu\xE9 tiempos aquellos! Todo empez\xF3 con una conversaci\xF3n casual
+      y termin\xF3 siendo nuestra vida."
+    screenCharacters: 030000000100000006000000
+    otherImage: {fileID: 0}
+  - id: 3
+    nextId: 
+    DialogCharacter: -1
+    text: "Volvamos al momento en que todo comenz\xF3..."
+    screenCharacters: 
+    otherImage: {fileID: 0}
+  decisions: []

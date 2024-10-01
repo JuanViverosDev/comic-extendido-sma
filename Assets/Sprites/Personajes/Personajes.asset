@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d051185358e97a64fb2b1562e0226678, type: 3}
+  m_Name: Personajes
+  m_EditorClassIdentifier: 
+  characters:
+  - name: Asesor Carlos
+    icon: {fileID: 21300000, guid: 220c059ca398e3c46829856b81ebb365, type: 3}
+    image: {fileID: 21300000, guid: 6589e7177a5e11c4a9d578ff513d2937, type: 3}
+  - name: Jhon Mayor
+    icon: {fileID: 21300000, guid: 8fab0098c9752164eab65f1ecaf74bf1, type: 3}
+    image: {fileID: 21300000, guid: e4bd308a70fe1d7418c97e5382aa0af9, type: 3}
+  - name: Jhon
+    icon: {fileID: 21300000, guid: 30ab1dc64c5f70c49bf9084d46e1ef66, type: 3}
+    image: {fileID: 21300000, guid: 17c5568c525eed7418b41f09dd04a5a0, type: 3}
+  - name: Juliana Mayor
+    icon: {fileID: 21300000, guid: 90799802db5c9e140a11915511289168, type: 3}
+    image: {fileID: 21300000, guid: a3ad10d53ea72574e9f5fafe98a46c26, type: 3}
+  - name: Juliana
+    icon: {fileID: 21300000, guid: 9dd03ce80e4a3284e831a6e94b4ea35c, type: 3}
+    image: {fileID: 21300000, guid: 91bb24ae390ad5c4fb5b0324c6ed7bc9, type: 3}
+  - name: Santiago
+    icon: {fileID: 21300000, guid: c345570f57082144ebf5f7fa6908a58c, type: 3}
+    image: {fileID: 21300000, guid: f65254e3dd726d84481d70b5a897ba99, type: 3}
+  - name: Santiago Mayor
+    icon: {fileID: 21300000, guid: e717e9a328f786d42a3e6dfe4f42b1cc, type: 3}
+    image: {fileID: 21300000, guid: f993c61a2ae24c841a72c9dadf2dcb9d, type: 3}
+  - name: Camila
+    icon: {fileID: 21300000, guid: 36d8761f8129ced4dbd31014550a8942, type: 3}
+    image: {fileID: 21300000, guid: f8a61f20f00c1964fa6f3ddf0acc7a4a, type: 3}
+  - name: Andres
+    icon: {fileID: 21300000, guid: 31f3232339422ea4382f5e112e396ac3, type: 3}
+    image: {fileID: 21300000, guid: fb0afefde4dcd1c429c31daa87a82b50, type: 3}
