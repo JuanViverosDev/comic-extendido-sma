@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b41d889245ed6d4f930bd67007ff4b5, type: 3}
-  m_Name: NewThumbnailData 2
+  m_Name: NewThumbnailData 3
   m_EditorClassIdentifier: 
-  thumbnailImage: {fileID: 21300000, guid: 2fd31d997b720324c83791634da9f737, type: 3}
-  titleText: "Cap\xEDtulo 3"
-  descriptionText: "Implementaci\xF3n y Primeros Resultados"
-  chapterID: Cap3A
-  sceneToLoad: Comic-3
+  thumbnailImage: {fileID: 21300000, guid: 7dfe5c72e5f135942bd106ec4d55151b, type: 3}
+  titleText: "Cap\xEDtulo 4"
+  descriptionText: "Colaboraci\xF3n y Trabajo en Equipo"
+  chapterID: Cap4
+  sceneToLoad: Comic-4

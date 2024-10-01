@@ -34,3 +34,9 @@ MonoBehaviour:
   - name: Santiago Mayor
     icon: {fileID: 21300000, guid: e717e9a328f786d42a3e6dfe4f42b1cc, type: 3}
     image: {fileID: 21300000, guid: f993c61a2ae24c841a72c9dadf2dcb9d, type: 3}
+  - name: Camila
+    icon: {fileID: 21300000, guid: 36d8761f8129ced4dbd31014550a8942, type: 3}
+    image: {fileID: 21300000, guid: f8a61f20f00c1964fa6f3ddf0acc7a4a, type: 3}
+  - name: Andres
+    icon: {fileID: 21300000, guid: 31f3232339422ea4382f5e112e396ac3, type: 3}
+    image: {fileID: 21300000, guid: fb0afefde4dcd1c429c31daa87a82b50, type: 3}

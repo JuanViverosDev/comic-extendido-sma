@@ -25,6 +25,8 @@ public enum Characters
     Juliana = 4,
     Santiago = 5,
     SantiagoMayor = 6,
+    Camila = 7,
+    Andres = 8,
     Narrador = -1
 }
 

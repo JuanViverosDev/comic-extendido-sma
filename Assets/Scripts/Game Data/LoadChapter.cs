@@ -12,10 +12,7 @@ public class LoadChapter : MonoBehaviour
 
     public void Start()
     {
-        if (loadedChapter != null)
-        {
-            bookTimeLine.SendDialog("0");
-        }
+        StartCoroutine(Wait());
     }
 
     public void Awake()
@@ -31,6 +28,15 @@ public class LoadChapter : MonoBehaviour
         else
         {
             bookTimeLine.chapter = posibleChapters[0];
+        }
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if (loadedChapter != null)
+        {
+            bookTimeLine.SendDialog("0");
         }
     }
 

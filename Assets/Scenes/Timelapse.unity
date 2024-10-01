@@ -158,6 +158,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 510c60163b94777439e3db9ed0f840b0, type: 2}
   - {fileID: 11400000, guid: dc648ce99d85b6b4dbe8a16d0d71a164, type: 2}
   - {fileID: 11400000, guid: 94197c1d9954d1843826d4e4ef915877, type: 2}
+  - {fileID: 11400000, guid: 77694ed2939756c478f04526943b9e0b, type: 2}
   grayscaleMaterial: {fileID: 2100000, guid: ba864f165ad3434438aef71937bc9482, type: 2}
   defaultMaterial: {fileID: 0}
   lockedColor:

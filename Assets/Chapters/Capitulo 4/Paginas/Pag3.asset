@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: Pag3
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: 6b80920feadf1584bb292aaa2fb8a647, type: 3}
+  isInteractive: 1
+  isFinal: 0
+  resultID: 
+  dialogs: []
+  decisions:
+  - id: Pag4_Dec1
+    nextId: 
+    text: "El equipo necesita definir la herramienta principal de comunicaci\xF3n
+      y coordinaci\xF3n para el proyecto."
+    options:
+    - OptionID: Pag4_Dec1_OptA
+      optionLabel: "1.Elegir una plataforma de gesti\xF3n de proyectos integrada
+        (como Trello o Asana)."
+      contentLabel: "Ofrece una estructura clara y visual para las tareas, pero puede
+        requerir tiempo de adaptaci\xF3n para algunos miembros."
+      retroalimentation: "La plataforma de gesti\xF3n de proyectos proporciona un
+        flujo claro de tareas, ayudando al equipo a mantenerse organizado, pero algunos
+        retrasos surgen debido a la falta de familiaridad inicial."
+      pages: []
+    - OptionID: Pag4_Dec1_OptB
+      optionLabel: "2.Optar por una plataforma de comunicaci\xF3n en tiempo real
+        (como Slack o Microsoft Teams)."
+      contentLabel: "Mejora la comunicaci\xF3n r\xE1pida y la resoluci\xF3n de problemas,
+        pero puede resultar en p\xE9rdida de seguimiento de tareas."
+      retroalimentation: "La comunicaci\xF3n fluye eficientemente y los problemas
+        se resuelven r\xE1pidamente, aunque algunos detalles se pierden debido a
+        la falta de seguimiento formal de las tareas."
+      pages: []

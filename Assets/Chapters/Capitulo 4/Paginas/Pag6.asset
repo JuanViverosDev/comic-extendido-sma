@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: Pag6
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: e118fa3e510a44c4cbcbbae82b897371, type: 3}
+  isInteractive: 0
+  isFinal: 0
+  resultID: 
+  dialogs:
+  - id: 0
+    nextId: 1
+    DialogCharacter: -1
+    text: "John nota que algunas tareas no est\xE1n avanzando como deber\xEDan, y
+      decide intervenir para redistribuir la carga de trabajo."
+    screenCharacters: 
+    otherImage: {fileID: 0}
+  - id: 1
+    nextId: 2
+    DialogCharacter: 2
+    text: "Necesitamos revisar nuestro enfoque y asegurarnos de que todos tengan
+      claro qu\xE9 deben hacer y cu\xE1ndo."
+    screenCharacters: 02000000
+    otherImage: {fileID: 0}
+  - id: 2
+    nextId: 3
+    DialogCharacter: -1
+    text: "Se simula una reuni\xF3n donde John utiliza una herramienta de reparto
+      de tareas y monitoreo de avances."
+    screenCharacters: 
+    otherImage: {fileID: 0}
+  - id: 3
+    nextId: 
+    DialogCharacter: 2
+    text: "Camila, t\xFA te encargar\xE1s de terminar los bocetos finales, mientras
+      Andr\xE9s comienza a preparar la campa\xF1a de lanzamiento. Santiago y yo supervisaremos
+      los ajustes t\xE9cnicos."
+    screenCharacters: 02000000
+    otherImage: {fileID: 0}
+  decisions: []

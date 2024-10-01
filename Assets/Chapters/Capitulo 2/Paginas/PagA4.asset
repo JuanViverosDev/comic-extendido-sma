@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PagA4
   m_EditorClassIdentifier: 
   background:
-    sprite: {fileID: 21300000, guid: afd39c6ef17c337458aecc9e860699a3, type: 3}
+    sprite: {fileID: 21300000, guid: 98ad67a193c824441a46f5bdc1d6e594, type: 3}
   isInteractive: 1
   isFinal: 0
   resultID: 
