@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: Pag 3B
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: 3f6b63b980ef11940a173630fd70447d, type: 3}
+  isInteractive: 0
+  isFinal: 0
+  resultID: 
+  dialogs:
+  - id: 0
+    nextId: 1
+    DialogCharacter: -1
+    text: "El equipo revisa las caracter\xEDsticas de los negocios tradicionales,
+      como tiendas f\xEDsicas o servicios locales. "
+    screenCharacters: 
+    otherImage: {fileID: 0}
+  - id: 1
+    nextId: 
+    DialogCharacter: 7
+    text: "Los negocios tradicionales son m\xE1s estables y manejables, pero el crecimiento
+      suele ser m\xE1s lento y menos escalable."
+    screenCharacters: 070000000500000008000000
+    otherImage: {fileID: 0}
+  decisions: []

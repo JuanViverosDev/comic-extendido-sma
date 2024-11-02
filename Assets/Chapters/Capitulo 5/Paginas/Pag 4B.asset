@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: Pag 4B
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: 330a7b03c720a8c44a2f99695ea33d02, type: 3}
+  isInteractive: 1
+  isFinal: 0
+  resultID: 
+  dialogs: []
+  decisions:
+  - id: 0
+    nextId: 
+    text: "Evaluar los pros y contras de un negocio tradicional.\r"
+    options:
+    - OptionID: Pag5_Dec3_OptA
+      optionLabel: Pros
+      contentLabel: "Menor riesgo, estabilidad, facilidad de gesti\xF3n."
+      retroalimentation: "Un negocio tradicional ofrece estabilidad, pero puede carecer
+        del dinamismo de las startups tecnol\xF3gicas."
+      pages:
+      - {fileID: 11400000, guid: 8780591084137a34f908cbdb0761e387, type: 2}
+      - {fileID: 11400000, guid: 0a6c0fd86809df64abe45c66bc841916, type: 2}
+    - OptionID: Pag5_Dec3_OptB
+      optionLabel: Contras
+      contentLabel: "Crecimiento limitado, necesidad de presencia f\xEDsica, menos
+        innovaci\xF3n.\r"
+      retroalimentation: "Un negocio tradicional ofrece estabilidad, pero puede carecer
+        del dinamismo de las startups tecnol\xF3gicas."
+      pages:
+      - {fileID: 11400000, guid: 8780591084137a34f908cbdb0761e387, type: 2}
+      - {fileID: 11400000, guid: 0a6c0fd86809df64abe45c66bc841916, type: 2}

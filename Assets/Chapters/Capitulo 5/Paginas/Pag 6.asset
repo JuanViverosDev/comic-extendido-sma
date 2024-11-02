@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: Pag 6
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: 96bb6fae4bcfd9c4f9f67c55157c853e, type: 3}
+  isInteractive: 1
+  isFinal: 1
+  resultID: 
+  dialogs: []
+  decisions:
+  - id: 0
+    nextId: 
+    text: "Confirmar la elecci\xF3n final del tipo de emprendimiento.\r"
+    options:
+    - OptionID: Pag5_Dec5_OptA
+      optionLabel: "Startup Tecnol\xF3gica"
+      contentLabel: "Pros: Potencial de crecimiento exponencial, innovaci\xF3n continua,
+        acceso a inversores.\n\r\nContras: Riesgo elevado, necesidad de financiamiento
+        constante, presi\xF3n para escalar r\xE1pidamente.\r\n"
+      retroalimentation: "El equipo avanza con una visi\xF3n clara y definida.\r"
+      pages: []
+    - OptionID: Pag5_Dec5_OptB
+      optionLabel: 'Negocio Tradicional '
+      contentLabel: "Pros: Menor riesgo, estabilidad, facilidad de gesti\xF3n.\n\r\nContras:
+        Crecimiento limitado, necesidad de presencia f\xEDsica, menos innovaci\xF3n.\r\n"
+      retroalimentation: "El equipo avanza con una visi\xF3n clara y definida.\r"
+      pages: []
+    - OptionID: Pag5_Dec5_OptC
+      optionLabel: 'Emprendimiento Social '
+      contentLabel: "Pros: Impacto positivo, satisfacci\xF3n personal, diferenciaci\xF3n
+        en el mercado.\n\r\nContras: Dificultades para escalar, desaf\xEDos financieros,
+        necesidad de alianzas estrat\xE9gicas.\r\n"
+      retroalimentation: "El equipo avanza con una visi\xF3n clara y definida.\r"
+      pages: []
+    - OptionID: Pag5_Dec5_OptC
+      optionLabel: Esperar
+      contentLabel: 
+      retroalimentation: "El equipo toma m\xE1s tiempo para decidir, pero con mayor
+        certeza.\r"
+      pages: []

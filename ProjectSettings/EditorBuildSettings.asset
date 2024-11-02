@@ -29,5 +29,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Comic-1.unity
     guid: 304079a5020813c4ab00664895ac9f38
+  - enabled: 1
+    path: Assets/Scenes/Comic-5.unity
+    guid: f5d4105e2a3bf0e4ab81a493461af858
+  - enabled: 1
+    path: Assets/Scenes/Docs.unity
+    guid: 28005bd9895007c448d96336edaf223a
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 40cd9cdfb4ad55245b1be0352b20b6e4, type: 2}

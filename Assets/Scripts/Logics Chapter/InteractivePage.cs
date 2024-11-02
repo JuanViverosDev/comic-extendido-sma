@@ -108,28 +108,34 @@ public class InteractivePage : MonoBehaviour
 
     void CheckOption(Decision d)
     {
-
-        if (toggles.ActiveToggles().Count() == 1 && decision != null)
+        try
         {
-            var index = FindObjectsOfType<Toggle>().Reverse().ToList().FindIndex(t => t.isOn); ;
-            uIConfirm.confirmBttn.onClick.RemoveAllListeners();
-            uIConfirm.contenttext.text = d.options[index].optionLabel;
-            uIConfirm.mainPanel.SetActive(true);
-
-            if (string.IsNullOrEmpty(d.options[index].retroalimentation))
+            if (toggles.ActiveToggles().Count() == 1 && decision != null)
             {
-                uIConfirm.confirmBttn.onClick.AddListener(HandDecision);
-            }
-            else
-            {
-                uIConfirm.confirmBttn.onClick.AddListener(()=>
-                uIRetro.mainPanel.SetActive(true));
-                uIRetro.titletext.text = d.options[index].optionLabel;
-                uIRetro.contenttext.text = d.options[index].retroalimentation;
-            }
+                var index = FindObjectsOfType<Toggle>().Reverse().ToList().FindIndex(t => t.isOn); ;
+                uIConfirm.confirmBttn.onClick.RemoveAllListeners();
+                uIConfirm.contenttext.text = d.options[index].optionLabel;
+                uIConfirm.mainPanel.SetActive(true);
 
-            bookTimeLine.decisionManager.MakeDecision(d.id, d.options[index].OptionID);
+                if (string.IsNullOrEmpty(d.options[index].retroalimentation))
+                {
+                    uIConfirm.confirmBttn.onClick.AddListener(HandDecision);
+                }
+                else
+                {
+                    uIConfirm.confirmBttn.onClick.AddListener(()=>
+                    uIRetro.mainPanel.SetActive(true));
+                    uIRetro.titletext.text = d.options[index].optionLabel;
+                    uIRetro.contenttext.text = d.options[index].retroalimentation;
+                }
+
+                bookTimeLine.decisionManager.MakeDecision(d.id, d.options[index].OptionID);
+            }
         }
+        catch (System.Exception)
+        {
+        }
+
     }
 
     public void HandDecision()

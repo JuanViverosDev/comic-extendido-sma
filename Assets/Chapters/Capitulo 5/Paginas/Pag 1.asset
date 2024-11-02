@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ff83dbd1b68cd40b93812735118f85, type: 3}
+  m_Name: Pag 1
+  m_EditorClassIdentifier: 
+  background:
+    sprite: {fileID: 21300000, guid: 54b44264b0ea8a34589d6b98c4cbd34a, type: 3}
+  isInteractive: 0
+  isFinal: 0
+  resultID: 
+  dialogs:
+  - id: 0
+    nextId: 1
+    DialogCharacter: -1
+    text: "Los personajes est\xE1n en una sala de Sinapsis UAO con pantallas que
+      muestran gr\xE1ficos e informaci\xF3n sobre diferentes tipos de emprendimientos."
+    screenCharacters: 0200000004000000
+    otherImage: {fileID: 0}
+  - id: 1
+    nextId: 2
+    DialogCharacter: 2
+    text: "Para avanzar, necesitamos entender qu\xE9 tipo de emprendimiento encaja
+      mejor con nuestra visi\xF3n y habilidades."
+    screenCharacters: 0400000002000000
+    otherImage: {fileID: 0}
+  - id: 2
+    nextId: 
+    DialogCharacter: 4
+    text: "Tenemos opciones interesantes: una startup tecnol\xF3gica con alto potencial
+      de crecimiento, un negocio tradicional m\xE1s estable, o un emprendimiento
+      social con impacto comunitario."
+    screenCharacters: 0400000002000000
+    otherImage: {fileID: 0}
+  decisions: []
